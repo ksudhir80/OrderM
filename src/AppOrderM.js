@@ -10,7 +10,7 @@ const Home = lazy(() => import('./components/Home'));
 const CustomerDashboard = lazy(() => import('./components/Customer/CustomerDashboard'));
 const ProductDashboard = lazy(() => import('./components/Product/ProductDashboard'));
 
-const App = () => {
+const AppOrderM = () => {
 
 
   return (
@@ -33,4 +33,4 @@ const App = () => {
   );
 };
 
-export default memo(App);
+export default memo(AppOrderM);
