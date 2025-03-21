@@ -1,2 +1,2 @@
-import OrderM from "./OrderM";
+import OrderM from "./src/OrderM";
 export default OrderM;
