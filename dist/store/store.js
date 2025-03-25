@@ -5,8 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _toolkit = require("@reduxjs/toolkit");
-var _customerSlice = _interopRequireDefault(require("./features/customer/customerSlice"));
-var _productSlice = _interopRequireDefault(require("./features/product/productSlice"));
+var _customerSlice = _interopRequireDefault(require("../features/customer/customerSlice"));
+var _productSlice = _interopRequireDefault(require("../features/product/productSlice"));
 var _redux = require("redux");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 const rootReducer = (0, _redux.combineReducers)({
