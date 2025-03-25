@@ -1,2 +1,2 @@
 import OrderM from "./components/OrderM";
-export default {OrderM};
+export  {OrderM};

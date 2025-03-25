@@ -5,10 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
-require("./index.css");
 var _AppOrderM = _interopRequireDefault(require("./AppOrderM"));
 var _reactRedux = require("react-redux");
-var _store = _interopRequireDefault(require("./store"));
+var _store = _interopRequireDefault(require("../store/store"));
 var _reactQuery = require("@tanstack/react-query");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 const queryClient = new _reactQuery.QueryClient();
