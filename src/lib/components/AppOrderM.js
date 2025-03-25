@@ -6,9 +6,9 @@ import Navigationbar from './NavigationBar';
 
 
 
-const Home = lazy(() => import('./components/Home'));
-const CustomerDashboard = lazy(() => import('./components/Customer/CustomerDashboard'));
-const ProductDashboard = lazy(() => import('./components/Product/ProductDashboard'));
+const Home = lazy(() => import('./Home'));
+const CustomerDashboard = lazy(() => import('./Customer/CustomerDashboard'));
+const ProductDashboard = lazy(() => import('./Product/ProductDashboard'));
 
 const AppOrderM = () => {
 
