@@ -1,2 +1,2 @@
-import OrderM from "./OrderM";
+import OrderM from "./components/OrderM";
 export default {OrderM};
