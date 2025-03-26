@@ -3,20 +3,6 @@ import axios from 'axios';
 
 const API_URL = 'http://localhost:8080/api'; // Replace with your API URL
 
-
-export const getCustomers= async () => {
-
-  try {
-    const response =await axios.get(API_URL+"/customers");
-    return response;
-  } catch (error) {
-    
- return error;
-  }
-
-
-}
-
 export const fetchCustomers = createAsyncThunk('customer/fetchAll', async (type) => {
   try {
     const response =await axios.get(API_URL+"/customers");

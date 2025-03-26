@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.updateStatus = exports.updateCustomer = exports.getCustomers = exports.fetchCustomers = exports.deleteCustomer = exports.default = exports.addCustomer = void 0;
+exports.updateStatus = exports.updateCustomer = exports.fetchCustomers = exports.deleteCustomer = exports.default = exports.addCustomer = void 0;
 require("core-js/modules/es.promise.js");
 require("core-js/modules/esnext.iterator.constructor.js");
 require("core-js/modules/esnext.iterator.filter.js");
@@ -12,15 +12,6 @@ var _axios = _interopRequireDefault(require("axios"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 const API_URL = 'http://localhost:8080/api'; // Replace with your API URL
 
-const getCustomers = async () => {
-  try {
-    const response = await _axios.default.get(API_URL + "/customers");
-    return response;
-  } catch (error) {
-    return error;
-  }
-};
-exports.getCustomers = getCustomers;
 const fetchCustomers = exports.fetchCustomers = (0, _toolkit.createAsyncThunk)('customer/fetchAll', async type => {
   try {
     const response = await _axios.default.get(API_URL + "/customers");
