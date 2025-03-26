@@ -22,6 +22,6 @@ const OrderM = () => {
     client: queryClient
   }, /*#__PURE__*/_react.default.createElement(_reactRedux.Provider, {
     store: _store.default
-  }, /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(_AppOrderM.default, null))));
+  }, /*#__PURE__*/_react.default.createElement(_AppOrderM.default, null)));
 };
 var _default = exports.default = OrderM;

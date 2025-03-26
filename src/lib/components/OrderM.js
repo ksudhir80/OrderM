@@ -10,12 +10,8 @@ const queryClient = new QueryClient();
 const OrderM=()=>{
 
   return (<QueryClientProvider client={queryClient}>
-  <Provider store={store}>
-  <React.StrictMode>
-  
-    <AppOrderM />
-   
-  </React.StrictMode>
+  <Provider store={store}>  
+    <AppOrderM />   
   </Provider>
   </QueryClientProvider>)
 
