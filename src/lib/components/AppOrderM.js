@@ -7,7 +7,7 @@ import Navigationbar from './NavigationBar';
 
 
 const Home = lazy(() => import('./Home'));
-const CustomerDashboard = lazy(() => import('./Customer/CustomerDashboard'));
+const Customer = lazy(() => import('./Customer/Customer'));
 const ProductDashboard = lazy(() => import('./Product/ProductDashboard'));
 
 const AppOrderM = () => {
@@ -22,7 +22,7 @@ const AppOrderM = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/customer" element={<CustomerDashboard />} />
+        <Route path="/customer" element={<Customer />} />
         <Route path="/product" element={<ProductDashboard />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
@@ -32,5 +32,5 @@ const AppOrderM = () => {
 
   );
 };
-export {CustomerDashboard,ProductDashboard,Home}
+export {Customer,ProductDashboard,Home}
 export default memo(AppOrderM);

@@ -7,7 +7,7 @@ import CustomerList from './CustomerList';
 import CustomerForm from './CustomerForm';
 import Alerts from '../utills/Alerts';
 
-const CustomerDashboard = () => {
+const Customer = () => {
   const [customer, setCustomer] = useState(null);
   const Customers = useSelector((state) => state.customers.list);
   const status=useSelector((state) => state.customers.status);
@@ -59,4 +59,4 @@ if(!customer && Customers.length>0){
 };
 
 export {CustomerList,CustomerForm,Alerts};
-export default memo(CustomerDashboard);
+export default memo(Customer);
