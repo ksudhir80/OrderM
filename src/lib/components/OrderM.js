@@ -20,4 +20,5 @@ const OrderM=()=>{
   </QueryClientProvider>)
 
 }
+export {AppOrderM};
 export default OrderM;
