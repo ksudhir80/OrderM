@@ -1,6 +1,6 @@
 import React, {  memo } from 'react';
 import { useDispatch } from 'react-redux';
-import {  deleteCustomer} from '../../features/customer/customerSlice';
+import {  deleteCustomer} from '../../store/features/customer/customerSlice';
 
 const CustomerList = ({ onEdit,Customers }) => {
     const dispatch = useDispatch();

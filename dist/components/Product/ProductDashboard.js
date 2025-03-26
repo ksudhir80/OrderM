@@ -7,6 +7,24 @@ require("core-js/modules/esnext.iterator.for-each.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "Alerts", {
+  enumerable: true,
+  get: function get() {
+    return _Alerts.default;
+  }
+});
+Object.defineProperty(exports, "ProductForm", {
+  enumerable: true,
+  get: function get() {
+    return _ProductForm.default;
+  }
+});
+Object.defineProperty(exports, "ProductList", {
+  enumerable: true,
+  get: function get() {
+    return _ProductList.default;
+  }
+});
 exports.default = void 0;
 require("core-js/modules/es.symbol.description.js");
 require("core-js/modules/es.promise.js");
@@ -14,7 +32,7 @@ require("core-js/modules/web.dom-collections.iterator.js");
 var _react = _interopRequireWildcard(require("react"));
 var _reactErrorBoundary = require("react-error-boundary");
 var _reactRedux = require("react-redux");
-var _productSlice = require("../../features/product/productSlice");
+var _productSlice = require("../../store/features/product/productSlice");
 var _reactQuery = require("@tanstack/react-query");
 var _ProductList = _interopRequireDefault(require("./ProductList"));
 var _ProductForm = _interopRequireDefault(require("./ProductForm"));

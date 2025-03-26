@@ -7,11 +7,29 @@ require("core-js/modules/esnext.iterator.for-each.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "Alerts", {
+  enumerable: true,
+  get: function get() {
+    return _Alerts.default;
+  }
+});
+Object.defineProperty(exports, "CustomerForm", {
+  enumerable: true,
+  get: function get() {
+    return _CustomerForm.default;
+  }
+});
+Object.defineProperty(exports, "CustomerList", {
+  enumerable: true,
+  get: function get() {
+    return _CustomerList.default;
+  }
+});
 exports.default = void 0;
 require("core-js/modules/web.dom-collections.iterator.js");
 var _react = _interopRequireWildcard(require("react"));
 var _reactRedux = require("react-redux");
-var _customerSlice = require("../../features/customer/customerSlice");
+var _customerSlice = require("../../store/features/customer/customerSlice");
 var _reactQuery = require("@tanstack/react-query");
 var _CustomerList = _interopRequireDefault(require("./CustomerList"));
 var _CustomerForm = _interopRequireDefault(require("./CustomerForm"));

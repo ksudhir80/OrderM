@@ -32,5 +32,5 @@ const AppOrderM = () => {
 
   );
 };
-
+export {CustomerDashboard,ProductDashboard,Home}
 export default memo(AppOrderM);

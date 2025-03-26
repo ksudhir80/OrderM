@@ -1,6 +1,6 @@
 import React, { useEffect,useState,memo  } from 'react';
 import { useDispatch } from 'react-redux';
-import { addCustomer, updateCustomer } from '../../features/customer/customerSlice';
+import { addCustomer, updateCustomer } from '../../store/features/customer/customerSlice';
 
 const CustomerForm = ({ customer, setCustomer }) => {
   

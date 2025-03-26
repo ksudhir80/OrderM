@@ -2,7 +2,7 @@ import React, { useState,useEffect,memo  } from 'react';
 
 import { ErrorBoundary } from "react-error-boundary";
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts,updateStatus,fetchDataSync } from '../../features/product/productSlice';
+import { fetchProducts,updateStatus,fetchDataSync } from '../../store/features/product/productSlice';
 import { useQuery } from "@tanstack/react-query";
 import ProductList from './ProductList';
 import ProductForm from './ProductForm';
@@ -91,5 +91,5 @@ if (error) return <p>Error: {error.message}</p>;
       </>
   );
 };
-
+export {ProductList,ProductForm,Alerts};
 export default memo(ProductDashboard);

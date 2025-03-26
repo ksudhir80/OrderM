@@ -1,6 +1,6 @@
 import React, {  memo } from 'react';
 import { useDispatch } from 'react-redux';
-import {  deleteProduct, } from '../../features/product/productSlice';
+import {  deleteProduct, } from '../../store/features/product/productSlice';
 
 const ProductList = ({ onEdit,Products }) => {
     const dispatch = useDispatch();

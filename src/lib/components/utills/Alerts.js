@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {  useDispatch } from 'react-redux';
-import { updateStatus } from '../../features/product/productSlice';
+import { updateStatus } from '../../store/features/product/productSlice';
 
 function Alerts(status) {
 

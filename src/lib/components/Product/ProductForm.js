@@ -1,6 +1,6 @@
 import React, { useEffect,useState,memo  } from 'react';
 import { useDispatch } from 'react-redux';
-import { addProduct, updateProduct } from '../../features/product/productSlice';
+import { addProduct, updateProduct } from '../../store/features/product/productSlice';
 
 const ProductForm = ({ product, setProduct }) => {
   

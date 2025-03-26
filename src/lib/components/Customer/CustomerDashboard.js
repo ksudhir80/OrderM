@@ -1,7 +1,7 @@
 import React, { useState,useEffect,memo  } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchCustomers } from '../../features/customer/customerSlice';
+import { fetchCustomers } from '../../store/features/customer/customerSlice';
 import { useQuery } from "@tanstack/react-query";
 import CustomerList from './CustomerList';
 import CustomerForm from './CustomerForm';
@@ -58,4 +58,5 @@ if(!customer && Customers.length>0){
   );
 };
 
+export {CustomerList,CustomerForm,Alerts};
 export default memo(CustomerDashboard);
